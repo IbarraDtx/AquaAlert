@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "AquaAlert_backend": {
+      "main": "src/AquaAlert_backend/main.mo",
+      "type": "motoko"
+    },
+    "AquaAlert_frontend": {
+      "dependencies": [
+        "AquaAlert_backend"
+      ],
+      "source": [
+        "src/AquaAlert_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "AquaAlert_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
